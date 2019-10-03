@@ -156,14 +156,12 @@ const App = () => {
               <th>Currency</th>
               <th>Sum</th>
             </tr>
-            {
-              sum.map(s => (
-                <tr key={s.currency}>
-                  <td>{s.currency}</td>
-                  <td>{s.sum}</td>
-                </tr>
-              ))
-            }
+            {sum.map(s => (
+              <tr key={s.currency}>
+                <td>{s.currency}</td>
+                <td>{s.sum}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
